@@ -1,0 +1,7 @@
+<ul class="menu bg-base-200 rounded-box w-56">
+    @for (link of navLinksItems; track $index) {
+        <li class="hover:bg-slate-200 rounded-lg text-red-600 font-semibold active"><a [routerLink]="link.route"> {{link.route}} </a></li>
+
+    }
+   
+</ul>
